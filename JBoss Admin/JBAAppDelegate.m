@@ -41,6 +41,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self checkInternetReachability];
     
+    self.instaOpsAppMonitor = [[InstaOpsAppMonitor alloc]
+                               initWithAppId:@"43"
+                               consumerKey:@"AKIAIX3YMNJMA5VAHIZQ"
+                               secretKey:@"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"
+                               environment:@"cloud-dev"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     

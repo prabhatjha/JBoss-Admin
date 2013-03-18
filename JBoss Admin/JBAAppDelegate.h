@@ -21,6 +21,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <InstaOpsSDK/InstaOps.h> 
 
 @class Reachability;
 
@@ -30,4 +31,6 @@
 @property (strong, nonatomic) UINavigationController *navController;
 
 @property (strong, nonatomic) Reachability *reachability;
+@property (strong, nonatomic) InstaOpsAppMonitor *instaOpsAppMonitor;
+
 @end

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63E373B216F6C44700E33AA6 /* InstaOpsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E373B116F6C44700E33AA6 /* InstaOpsSDK.framework */; };
+		63E373B416F6C6F700E33AA6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E373B316F6C6F700E33AA6 /* Default-568h@2x.png */; };
+		63E373B616F6C86E00E33AA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E373B516F6C86E00E33AA6 /* CoreLocation.framework */; };
+		63E373B816F6C87E00E33AA6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E373B716F6C87E00E33AA6 /* CoreTelephony.framework */; };
 		6F0C3F7E14FCEB7900BA2863 /* JBAOperationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0C3F7D14FCEB7900BA2863 /* JBAOperationsManager.m */; };
 		6F21C70D1524E90C00814B76 /* EditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F21C70C1524E90C00814B76 /* EditCell.m */; };
 		6F21C7121524EB4600814B76 /* ToggleSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F21C7111524EABA00814B76 /* ToggleSwitchCell.m */; };
@@ -105,6 +109,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63E373B116F6C44700E33AA6 /* InstaOpsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstaOpsSDK.framework; path = "../../Downloads/ApigeeMobileAnalytics_iOS-1.4.8/InstaOpsSDK.framework"; sourceTree = "<group>"; };
+		63E373B316F6C6F700E33AA6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		63E373B516F6C86E00E33AA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		63E373B716F6C87E00E33AA6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		6F0C3F7C14FCEB7900BA2863 /* JBAOperationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBAOperationsManager.h; sourceTree = "<group>"; };
 		6F0C3F7D14FCEB7900BA2863 /* JBAOperationsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBAOperationsManager.m; sourceTree = "<group>"; };
 		6F21C70C1524E90C00814B76 /* EditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCell.m; sourceTree = "<group>"; };
@@ -288,10 +296,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E373B816F6C87E00E33AA6 /* CoreTelephony.framework in Frameworks */,
+				63E373B616F6C86E00E33AA6 /* CoreLocation.framework in Frameworks */,
 				6FF9095A15344B1600477A59 /* SystemConfiguration.framework in Frameworks */,
 				6F29153D14AD30F800C43FDE /* UIKit.framework in Frameworks */,
 				6F29153F14AD30F800C43FDE /* Foundation.framework in Frameworks */,
 				6F29154114AD30F800C43FDE /* CoreGraphics.framework in Frameworks */,
+				63E373B216F6C44700E33AA6 /* InstaOpsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +348,9 @@
 		6F29152D14AD30F800C43FDE = {
 			isa = PBXGroup;
 			children = (
+				63E373B716F6C87E00E33AA6 /* CoreTelephony.framework */,
+				63E373B516F6C86E00E33AA6 /* CoreLocation.framework */,
+				63E373B316F6C6F700E33AA6 /* Default-568h@2x.png */,
 				6F85B258153394960051C53B /* Default@2x.png */,
 				6F85B25415338F1E0051C53B /* Default.png */,
 				6F29155B14AD311800C43FDE /* icon@2x.png */,
@@ -361,6 +375,7 @@
 		6F29153B14AD30F800C43FDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63E373B116F6C44700E33AA6 /* InstaOpsSDK.framework */,
 				6F7F123714F521740053C6C9 /* SystemConfiguration.framework */,
 				6F7F123514F521430053C6C9 /* MobileCoreServices.framework */,
 				6F7F123314F520F90053C6C9 /* CFNetwork.framework */,
@@ -720,6 +735,7 @@
 				6F85B25B153396970051C53B /* Default.png in Resources */,
 				6FF9096615345DF100477A59 /* navigation-bar-bg.png in Resources */,
 				6FF9096715345DF100477A59 /* navigation-bar-bg-landscape.png in Resources */,
+				63E373B416F6C6F700E33AA6 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,6 +861,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Christos Vasilakis";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Christos Vasilakis";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/ApigeeMobileAnalytics_iOS-1.4.8\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JBoss Admin/JBoss Admin-Prefix.pch";
 				INFOPLIST_FILE = "JBoss Admin/JBoss Admin-Info.plist";
@@ -908,6 +928,10 @@
 		6F29155714AD30F800C43FDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/ApigeeMobileAnalytics_iOS-1.4.8\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JBoss Admin/JBoss Admin-Prefix.pch";
 				INFOPLIST_FILE = "JBoss Admin/JBoss Admin-Info.plist";
@@ -926,6 +950,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Christos Vasilakis";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Christos Vasilakis";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/ApigeeMobileAnalytics_iOS-1.4.8\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JBoss Admin/JBoss Admin-Prefix.pch";
 				INFOPLIST_FILE = "JBoss Admin/JBoss Admin-Info.plist";

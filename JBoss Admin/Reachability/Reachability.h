@@ -35,7 +35,7 @@
 #import <ifaddrs.h>
 #import <netdb.h>
 
-extern NSString *const kReachabilityChangedNotification;
+//extern NSString *const kReachabilityChangedNotification;
 
 typedef enum 
 {
